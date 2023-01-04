@@ -1,0 +1,160 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Projects</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+		<div id="wrapper">
+
+			<!-- Intro -->
+			<div id="intro">
+				<h1>My Profolio</h1>
+				<p>A showcase of my projects and my abilities.</p>
+				<ul class="actions">
+					<li><a href="#nav" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+				</ul>
+			</div>
+
+			<!-- Nav -->
+			<nav id="nav">
+				<ul class="links">
+					<li><a href="index.html">Info</a></li>
+					<li class="active"><a href="generic.html">Projects</a></li>
+				</ul>
+				<ul class="icons">
+					<li><a href="https://www.linkedin.com/in/logan-mueller-2b3067251/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+					<li><a href="https://github.com/lmueller47" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+				</ul>
+			</nav>
+
+			<!-- Main -->
+			<div id="main">
+
+				<!-- Post -->
+				<section class="post">
+					<header class="Solunis">
+						<h1>Solunis</h1>
+					</header>
+					<div class="image main"><img src="images/Solunis_UI.jpg" alt="" /></div>
+					<p>Solunis was developed by a team of four people over 48 hours using Photoshop and Unity to create our game. We split the work up by sections. Two people worked on the art and two people worked on creating the code that would make the game operate. I was tasked with one other to work on the code for the project. I worked on creating the basic movement for the player and enemies as well as the combat system involing attacks, damage, healing, and the UI. Aside from those tasks, I was also in charge of implimenting the art and animations into unity to work with the movement and attacks of the various characters.</p>
+					<div class="image main"><img src="images/Solunis_PointBuy.jpg" alt="" /></div>
+					<p>I also worked on the point buy system pictured above for this project. This was my greatest challenge as I hadn't previosuly worked on something like this. I was able to learn to use singleton patterns to store the information and keep the data through numrous scenes and scripts. Using this now I was able to imporove my past and future projects by using this same pattern. </p>
+					<ul class="actions special">
+						<li><a href="https://thedjw191.itch.io/solunis" class="button">View On itch.io</a></li>
+					</ul>
+				</section>
+
+				<section class="post">
+					<header class="Kitty Hop">
+						<h1>Kitty Hop</h1>
+					</header>
+					<div class="image main"><img src="images/KittyHop_Gameplay.jpg" alt="" /></div>
+					<p>Kitty Hop was developed for the Global Gam Jam 2022 by a small team of three. The game was developed with the theme of duality in mind. The game involves jumping on enough kittens to get the golden carrot to appear. The player must collect the carrot to win the level. The theme of duality comes in when the player jumps on enough kittens to cause a switch to a darker mirrored world where the kittens are faster and the player can now throw projectiles at the kittens.</p>
+					<div class="image main"><img src="images/KittyHop_Switch.jpg" alt="" /></div>
+					<p>I worked on programming Kitty Hop. I worked on the basic platformer movement with both the player and the enemies. I also did work on the combat system for the players and enemies linking their animation to the actions they could take in the game. I also worked on the portals for levels 2 and 3 which could teleport the player between the two point when they collided with the portals hitbox. The main coding challenge for this project was developing the switch between the two worlds. I accomplished this by creating two spirtes for each object and toggling them on and off based on the number of kittens killed which would scales to the lower bar on the player's UI.</p>
+					<ul class="actions special">
+						<li><a href="https://lmueller47.itch.io/kitten-hop" class="button">View On itch.io</a></li>
+					</ul>
+				</section>
+
+				<section class="post">
+					<header class="Pirate Time">
+						<h1>Pirate Time</h1>
+					</header>
+					<div class="image main"><img src="images/Pirates_Lvl1.jpg" alt="" /></div>
+					<p>Pirate Time was developed as a class project for UW-Whitewater starting in mid November of 2022. I worked on it with one other classmate, we separated the work with one person handling the coding of the prject and one person worked on art. I stepped ou tof my usual role and took initiative on the art aspect of this project. All of the art for this project is original and was done in the month period we had for the final. I was in charge of the art as well as the animations for all player characters and enemies. I used Unity's built in skeletal animation tool to create the animation sfor all the characters in the game.</p>
+					<div class="image main"><img src="images/Pirates_Character_Select.jpg" alt="" /></div>
+					<p>Along with all of the visual aspects of the project I also handled some of the coding elements as well. I created all of the managers that would use the singleton pattern to exist through different scenes including the Audio Manager, Player Manager, and Game Manager. I also created the menu scenes as well as the player select screen as shown above. The character select screen works by using the player manager to record which character the player selects then will spawn in the appropriate player at the beginning of each playable scene.</p>
+					<ul class="actions special">
+						<li><a href="https://lmueller47.itch.io/pirate-time" class="button">View On itch.io</a></li>
+					</ul>
+				</section>
+
+				<section class="post">
+					<header class="Interactable NFTs">
+						<h1>Interactable NFTs</h1>
+					</header>
+					<div class="image main"><img src="images/RAP_NFT_2.jpg" alt="" /></div>
+					<p>Interactable NFT's was a project developed by myself and professor Nick Hwang for UW-Whitewater's Research Apprenticeship Program. We wanted to make a way for multiple people to interact through the web to edit the same canvas. We decided on using P5.js and its uses with generative NFT's as our canvas of choice. I programmed on P5.js to create the framework of what the users can edit. They can choose between three preset images or upload their own photos. The sketch in P5.js then takes the image information and pixelates the original images the constantly edits the pixel by creating curves the update based on a random function and a slider that is controled by the external website. The website also contains the means to start and stop the sketch creating a still image. To stop too many users from overloading the system we created a timer so that a button would be frozen for all other users when a user is interacting with a button.</p>
+					<div class="image main"><img src="images/RAP_NFT_Interface.jpg" alt="" /></div>
+					<p>Although it is not currently an NFT it can be mad into one wth a purchase however, we didn't want to purchase it until we were ready to finish the project. We planned to take the project further by including in interactive art board for the project to replace the input images. The possibilities are endless for what we can add to the website for the player to interact withand we plan to explor more with these generative and highly interactable NFT's.</p>
+					<ul class="actions special">
+						<li><a href="https://editor.p5js.org/lmuller47/sketches/7GjhcRxW0" class="button">P5.js Visualizer</a></li>
+					</ul>
+					<ul class="actions special">
+						<li><a href="https://rioter00.github.io/uww-rap-nft/Interface_2/Interface.html" class="button">External Controller</a></li>
+					</ul>
+				</section>
+
+				<section class="post">
+					<header class="Immersive Art">
+						<h1>Immersive Art</h1>
+					</header>
+					<div class="image main"><img src="images/1_zhang.jpg" alt="" /></div>
+					<p>Immersive art was a project developed by myself and Professor Xiaohong Zhang for UW Whitewater's summer research program. We divided the project into two parts. I handled the coding aspects of the project working in P5.js while Xiaohong worked with Blender and Adobe After Effects. I worked in P5.js to create an audio visualizer that listens to the music being played in the program and responds based on if detects a high, low, or mid notes and plots them on a graph where it them eminates particles for a brief amount of time until the next not is detects. This creates an effect as appear like these random particles are flowing with the music as it plays. Xiaohong's work in Blender was creating 3D models of buildings the would crumble and fall and then build back up again. She would then comnbine both videos in AfterEffects and mesh them together to create the final video.</p>
+					<div class="image main"><img src="images/Generative_Cover.jpg" alt="" /></div>
+					<p>The video will be played on a large canvas where peopple can walk around a view it from all angles. We plan to continue developing this project before we eventually put it into an exhibit or community gallery. We are currently refining our work to create a higher quality final video. We also have reached out to another professor at Whitewater who is known for his audio projects and compostions to compose music for our project. We plan to show our prototype at the NCUR national research conference in April of 2023.</p>
+					<ul class="actions special">
+						<li><a href="https://editor.p5js.org/lmuller47/sketches/y-UYQFvAq" class="button">P5.js Audio Visualizer</a></li>
+					</ul>
+				</section>
+
+			</div>
+
+			<!-- Footer -->
+			<footer id="footer">
+				<section class="split contact">
+					<section class="alt">
+						<h3>Address</h3>
+						<p>
+							1015 Chapel St.<br />
+							Marshfield, WI 54449
+						</p>
+					</section>
+					<section>
+						<h3>Phone</h3>
+						<p><a href="#">(715) 741-1649</a></p>
+					</section>
+					<section>
+						<h3>Email</h3>
+						<p><a href="#">logan122902@gmail.com</a></p>
+					</section>
+					<section>
+						<h3>Social</h3>
+						<ul class="icons alt">
+							<li><a href="https://www.linkedin.com/in/logan-mueller-2b3067251/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/lmueller47" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</section>
+				</section>
+			</footer>
+
+			<!-- Copyright -->
+			<div id="copyright">
+				<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+			</div>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
